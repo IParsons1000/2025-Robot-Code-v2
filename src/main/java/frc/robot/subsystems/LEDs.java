@@ -12,12 +12,21 @@ public class LEDs extends SubsystemBase {
   int ledPWMPort = 3;
   
   TrobotAddressableLED m_ledStrip = new TrobotAddressableLED(ledPWMPort, ledLength);
+  AddressableLEDBuffer m_buffer = new AddressableLEDBuffer(ledLength);
   
   /** Creates a new LEDs. */
-  public LEDs() {}
+  public LEDs(RobotContainer robotContainer) {
+    super();
+    m_RobotContainer = robotContainer;
+  }
 
+  private void ledsOn() {
+    
+  }
+  
   @Override
   public void periodic() {
+    
     // This method will be called once per scheduler run
   }
 }
