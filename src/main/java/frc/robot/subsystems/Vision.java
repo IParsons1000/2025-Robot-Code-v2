@@ -279,7 +279,7 @@ public class Vision extends SubsystemBase {
 
 //                             //drivetrain.addVisionMeasurement(
 //                             //        est.estimatedPose.toPose2d(), Utils.fpgaToCurrentTime(Timer.getFPGATimestamp()), estStdDevs);
-//                             DogLog.log("Vision Pose", est.estimatedPose.toPose2d());
+                               DogLog.log("Vision Pose", est.estimatedPose.toPose2d());
 
 //                             // Give a visual cue for alignment to reef
 //                             var i = getClosestAprilTag();
@@ -295,7 +295,7 @@ public class Vision extends SubsystemBase {
 //         }
 
         
-//     }
+  }
 
 
     @Override
